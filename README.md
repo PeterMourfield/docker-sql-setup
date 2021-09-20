@@ -8,6 +8,8 @@ sudo docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=P@55w0rd" \
 
 https://www.brentozar.com/training/vm/
 
+https://dbafromthecold.com/2020/07/17/sql-server-and-docker-compose/
+
 CREATE DATABASE StackOverflow   
     ON (FILENAME = '/stack-overflow/StackOverflow2013_1.mdf'),   
     (FILENAME = '/stack-overflow/StackOverflow2013_2.ndf'),   
