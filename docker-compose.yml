@@ -1,10 +1,10 @@
 version: "3.9"
 services:
     db:
-        image: "mcr.microsoft.com/mssql/server:2019-latest"
-#        build: 
-#          context: .
-#          dockerfile: Dockerfile
+#        image: "mcr.microsoft.com/mssql/server:2019-latest"
+        build: 
+          context: .
+          dockerfile: Dockerfile
         env_file:
           - sqlserver.env
           - sapassword.env
