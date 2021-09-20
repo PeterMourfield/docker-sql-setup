@@ -2,9 +2,9 @@ version: "3.9"
 services:
     db:
         image: "mcr.microsoft.com/mssql/server:2019-latest"
-        environment:
-            SA_PASSWORD: "P@55w0rd"
-            ACCEPT_EULA: "Y"
+        env_file:
+          - sqlserver.env
+          - sapassword.env
         ports:
           - 1433:1433
         volumes:
