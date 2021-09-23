@@ -1,22 +1,5 @@
 # sql-setup
 
-https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver15&pivots=cs1-bash
+This is a simple example of using Docker to spin-up and initialize a SQL Server instance.
 
-sudo docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=P@55w0rd" \
-   -p 1433:1433 --name sql1 -h sql1 \
-   -d mcr.microsoft.com/mssql/server:2019-latest
-
-https://www.brentozar.com/training/vm/
-
-https://dbafromthecold.com/2020/07/17/sql-server-and-docker-compose/
-
-CREATE DATABASE StackOverflow   
-    ON (FILENAME = '/stack-overflow/StackOverflow2013_1.mdf'),   
-    (FILENAME = '/stack-overflow/StackOverflow2013_2.ndf'),   
-    (FILENAME = '/stack-overflow/StackOverflow2013_3.ndf'),   
-    (FILENAME = '/stack-overflow/StackOverflow2013_4.ndf'),   
-    (FILENAME = '/stack-overflow/StackOverflow2013_log.ldf')   
-    FOR ATTACH;  
-
-
-https://github.com/olahallengren/sql-server-maintenance-solution
+It assumes that you have a copy of the Stack Overflow downloaded and extracted to a folder called 'stack-overflow'. See @BrentOzar 's blog post on [How to Download the Stack Overflow Database](https://www.brentozar.com/archive/2015/10/how-to-download-the-stack-overflow-database-via-bittorrent/).
