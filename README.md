@@ -1,6 +1,6 @@
 # Docker SQL Setup
 
-This is a simple example of using Docker to spin-up and initialize a SQL Server instance.
+This is a simple example of using Docker with Docker-Compose to spin-up and initialize a SQL Server instance.
 
 ## How to use
 1. Clone the repository locally
